@@ -1,0 +1,16 @@
+{
+  "name": "cge-website",
+  "version": "1.0.0",
+  "description": "Clean Globe Environmental LLC Website",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "update-browserslist-db": "^1.2.3"
+  }
+}
