@@ -3,30 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon - Clean Globe Environmental LLC</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'prm-blue': '#1271b9',
-                        'prm-green': '#0f8a43',
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Environmental Services - Clean Globe Environmental LLC</title>
+    <link href="css/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans antialiased bg-gradient-to-br from-prm-blue to-prm-green min-h-screen flex items-center justify-center">
-    <div class="text-center px-4">
-        <img src="public/cge-logo.png" alt="Clean Globe Environmental" class="h-32 mx-auto mb-8 brightness-0 invert">
-        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Coming Soon</h1>
-        <p class="text-xl text-white/90 mb-8">This page is currently under construction</p>
-        <a href="index.html" class="inline-block bg-white text-prm-blue px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Return to Home
-        </a>
-    </div>
+<body class="font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="public/cge-logo2.png" alt="Clean Globe Environmental" class="h-16 w-auto">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-prm-blue font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-prm-blue font-medium">About Us</a>
+                    <a href="environmental-services.html" class="nav-link text-prm-blue font-medium">Environmental Services</a>
+                    <a href="geophysical-services.html" class="nav-link text-gray-700 hover:text-prm-blue font-medium">Geophysical Services</a>
+                    <a href="photo-gallery.html" class="nav-link text-gray-700 hover:text-prm-blue font-medium">Photo Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-prm-blue font-medium">Contact Us</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-prm-blue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="hidden md:hidden pb-4 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-prm-blue font-medium py-2">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-prm-blue font-medium py-2">About Us</a>
+                <a href="environmental-services.html" class="block text-prm-blue font-medium py-2">Environmental Services</a>
+                <a href="geophysical-services.html" class="block text-gray-700 hover:text-prm-blue font-medium py-2">Geophysical Services</a>
+                <a href="photo-gallery.html" class="block text-gray-700 hover:text-prm-blue font-medium py-2">Photo Gallery</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-prm-blue font-medium py-2">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-prm-blue py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Environmental Services</h1>
+                <p class="text-xl text-white/90 leading-relaxed">
+                    Comprehensive environmental solutions tailored to your project needs
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Clean Globe Environmental Services include:</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-12">
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">Soil and Groundwater Sampling</span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">Geoprobe - Environmental and Geotechnical Drilling</span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">Remedial System Feasibility Testing</span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">Remedial Construction</span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">System Operation and Maintenance</span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">Chemical Injection (ChemOx)</span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">UST Compliance</span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-prm-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-lg text-gray-700">Soil Vapor Intrusion Assessment and Mitigation</span>
+                    </div>
+                </div>
+
+                <!-- Environmental Services Image -->
+                <div class="mb-16">
+                    <img src="public/env_services.jpg" alt="Environmental Services" class="w-full rounded-xl shadow-2xl">
+                </div>
+
+                <!-- Training and Certifications Section -->
+                <div class="bg-gray-50 rounded-xl p-8 md:p-10 mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Training & Certifications</h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        All Clean Globe Environmental (CGE) field personnel are trained to safely perform the work that they do. Environmental Technicians, Equipment Operators, and Laborers are taught to recognize hazards and how to deal with them. CGE personnel have the following training / certifications:
+                    </p>
+                    
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>40 hour OSHA HAZWOPER,</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>8 hour OSHA Supervisor's,</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>10 hour OSHA Construction Industry,</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>American Petroleum Institute (API) Safe Work,</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>Life Saving Rules for Shell Oil US</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>Loss Prevention System (LPS) for ExxonMobil</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>Control of Work (COW) for BP</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>American Red Cross First Aid / CPR, and</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-prm-blue font-bold">•</span>
+                            <span>US Transportation Worker Identification Credential (TWIC)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Brands Image -->
+                <div class="text-center">
+                    <img src="public/brands.jpg" alt="Certifications and Client Brands" class="w-full rounded-xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-prm-blue py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Need Environmental Services?</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Contact us today to discuss how we can support your environmental project
+            </p>
+            <a href="contact.html" class="inline-block bg-white text-prm-blue hover:bg-gray-100 px-10 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 shadow-lg">
+                Contact Us Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <img src="public/cge-logo2.png" alt="Clean Globe Environmental" class="h-12 mb-4 brightness-0 invert">
+                    <p class="text-gray-400">Environmental contracting excellence since 1999</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-prm-green transition-colors">About Us</a></li>
+                        <li><a href="environmental-services.html" class="text-gray-400 hover:text-prm-green transition-colors">Environmental Services</a></li>
+                        <li><a href="geophysical-services.html" class="text-gray-400 hover:text-prm-green transition-colors">Geophysical Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-prm-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>34 Cain Drive</li>
+                        <li>Brentwood, NY 11717</li>
+                        <li>(888) 454-5923</li>
+                        <li>Email us at <a href="mailto:BLownes@cg-env.com" class="text-prm-green hover:text-prm-green-light transition-colors">BLownes@cg-env.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Product Recovery Management Inc - CGE Division. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
